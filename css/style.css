@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 10%, 0.65);
+    border-radius: 0%;
+    z-index: +1;
+
+}
+
+
+
 
 img {
     border-radius: 10px;
@@ -70,15 +84,12 @@ a {
     background-image: linear-gradient(rgba(66, 66, 66, 0.5), rgba(1, 1, 1, 0.7)), url(/images/header.jpeg);
 }
 
-footer {
-    text-align: center;
-    margin: 10px 0;
-}
+
 
 nav {
     display: flex;
-    padding: 2% 6%;
     justify-content: space-between;
+
 }
 
 nav img {
@@ -264,13 +275,16 @@ div {
     float: left;
 }
 
-
-
-footer {
-    text-align: center;
-    margin: 10px 0;
+.footer img {
+    width: 100%;
+    border-radius: 0%;
+    border: black;
+    border-width: 5px;
 
 }
+
+
+
 
 @media(max-width: 700px) {
 
@@ -318,4 +332,6 @@ footer {
         padding: 30px;
         margin-top: 0;
     }
+
+
 }
