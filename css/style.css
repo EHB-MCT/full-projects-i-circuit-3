@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
 
 html {
     scroll-behavior: smooth;
+
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 10%, 0.65);
+    border-radius: 0%;
+    z-index: +1;
 }
 
 img {
@@ -54,6 +67,9 @@ a {
     font-weight: bold;
 }
 
+/***************** 
+HEADER
+******************/
 
 .header {
     min-height: 25vh;
@@ -70,15 +86,12 @@ a {
     background-image: linear-gradient(rgba(66, 66, 66, 0.5), rgba(1, 1, 1, 0.7)), url(/images/header.jpeg);
 }
 
-footer {
-    text-align: center;
-    margin: 10px 0;
-}
+
 
 nav {
     display: flex;
-    padding: 2% 6%;
     justify-content: space-between;
+
 }
 
 nav img {
@@ -235,51 +248,65 @@ nav .fa {
     cursor: default;
 }
 
-.over-circuit {
+#over-circuit {
     width: 90%;
     margin: auto;
 }
 
-.over-circuit div p {
-    margin-left: 30px;
+
+.block-img {
+    width: 50%;
+    margin-right: 1px;
 }
 
-#kaart {
-    display: inline-block;
+
+.block-img img {
+    width: 450px;
+    box-shadow: 20px 20px 10px gray;
 }
 
-#kaart p {
-    text-align: center;
+.block-text {
+    margin: 20px;
+    margin-top: 0px;
 }
 
-#kaart img {
-    float: left;
+.block {
+    display: flex;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.kaart {
+    display: flex;
+
+}
+
+
+.footer img {
+    width: 100%;
+}
+
+
+.kaart img {
+    border: 2px solid gray;
     box-shadow: none;
-
 }
 
 div {
     display: inline-block;
 }
 
+.een p {
+    margin-left: 300px;
+}
+
 div p {
-    margin-top: 50px;
+    margin-top: 20px;
     color: #15284B;
     text-align: left;
-}
-
-div img {
-    width: 50%;
-    margin-right: 1px;
-    box-shadow: 15px 15px 10px gray;
-}
-
-img.align-right {
-    float: right;
-}
-
-img.align-left {
-    float: left;
 }
 
 .wat-doen-we {
@@ -287,12 +314,12 @@ img.align-left {
     text-align: left;
 }
 
-
-footer {
-    text-align: center;
-    margin: 10px 0;
-
+.wat-doen-we p {
+    margin-right: 200px;
 }
+
+
+
 
 @media(max-width: 700px) {
 
@@ -340,4 +367,6 @@ footer {
         padding: 30px;
         margin-top: 0;
     }
+
+
 }
