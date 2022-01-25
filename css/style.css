@@ -1,9 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+.nav-links {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 10%, 0.65);
+    border-radius: 0%;
+    z-index: +1;
+}
 
+h1,
+h3,
+nav {
+    font-family: hind siliguri;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
 
-html {
-    scroll-behavior: smooth;
+}
 
+nav img {
+    width: 300px;
+    margin-left: 15x;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+    margin-top: none;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a {
+    /*navigatie woorden*/
+    color: #fff;
+    text-decoration: none;
+    font-size: 17.5px;
+}
+
+.nav-links ul li::after {
+    /*kleur onder de nav links*/
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #95C623;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.wie-zijn-we img {
+    width: 50%;
 }
