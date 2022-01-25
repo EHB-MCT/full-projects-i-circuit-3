@@ -60,6 +60,14 @@ nav img {
     width: 100%;
 }
 
-.wie-zijn-we img {
+.wie_zijn_we {
+    background-color: red;
+}
+
+.wie_zijn_we img {
+    width: 100%;
+}
+
+.wie_zijn_we img.zanger {
     width: 50%;
 }
