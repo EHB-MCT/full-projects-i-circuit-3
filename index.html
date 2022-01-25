@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="index.js"></script>
 
-
 </head>
 
 <body>
@@ -30,7 +29,19 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="images/header.jpeg" style="width:100%">
+
             </div>
+
+            <div class="mySlides fade">
+                <img src="images/man op fiets 2.jpeg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/tattoo.jpeg" style=" width: 111.9%">
+
+            </div>
+
         </div>
         <div class="mySlides fade">
             <img src="images/man op fiets 2.jpeg" style="width:100%">
@@ -47,17 +58,7 @@
                 <img src="images/foto's page 1.png" alt="" class="image1"></div>
             <img src="images/zanger_micro_AV.png" alt="" class="zanger">
         </div>
-
-
-
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
         </div>
-
         <script>
             var slideIndex = 0;
             showSlides();
@@ -65,51 +66,70 @@
             function showSlides() {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
                 slideIndex++;
                 if (slideIndex > slides.length) {
-                    slideIndex = 1
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+                    slideIndex = 1;
                 }
                 slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                setTimeout(showSlides, 5000); // Change image every 2 seconds
+                setTimeout(showSlides, 3500); // Change image every 2 seconds
             }
         </script>
 
     </section>
-
-
-    <h1>Waar en wanneer kan je terecht?</h1>
-    <div class="mapouter">
-        <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <style>
-                .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 600px;
-                    width: 1000px;
-                }
-            </style><a href="https://www.embedgooglemap.net"></a>
-            <style>
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 600px;
-                    width: 1000px;
-                }
-            </style>
+    <div class="over-circuit">
+        <h1>Over Circuit</h1>
+    </div>
+    <section class="content">
+        <h1 id="projecten">Projecten</h1>
+        <div class="row">
+            <div class="popular-col">
+                <img src="images/man op fiets 2.jpeg">
+                <a href="#">
+                    <div class="text-layer">
+                        <p>Aan circuservaring geen gebrek. Bij CIRCUIT kon Emiliano daar voor de eerste keer een
+                            tweede
+                            kunstzinnige laag aan toevoegen. Zijn boodschap:'de armoede van de armen maakt de rijken
+                            rijker'. Voor deze speciale performance leerde hij om in zijn eentje een show neer te
+                            zetten. “Ik heb hier ontdekt hoe goed het is om een coach te hebben die je performance
+                            vanaf
+                            een afstand bekijkt”, zegt Emiliano.</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
+
+        <div id="over-circuit">
+            <h1>Wat doen we?</h1>
+
+
+            <h1>Waar en wanneer kan je terecht?</h1>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 600px;
+                            width: 1000px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net"></a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 600px;
+                            width: 1000px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
     <!-----assist----->
     <footer class="footer">
@@ -121,3 +141,27 @@
 </body>
 
 </html>
+
+<!--
+
+<h1>Waar en wanneer kan je terecht?</h1>
+<div class="mapouter">
+    <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                height: 600px;
+                width: 1000px;
+            }
+        </style><a href="https://www.embedgooglemap.net"></a>
+        <style>
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 600px;
+                width: 1000px;
+            }
+        </style>-->
