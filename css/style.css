@@ -20,9 +20,7 @@ body {
     z-index: +1;
 }
 
-img {
-    border-radius: 10px;
-}
+
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -450,7 +448,7 @@ img {
     max-width: 1920px;
     min-width: 1080px;
     position: absolute;
-    margin: auto; 
+    margin: auto;
 }
 
 /* Caption text */
