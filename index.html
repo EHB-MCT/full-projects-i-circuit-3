@@ -10,6 +10,41 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html" class="nav-link">Over Circuit</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Projecten</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Gallerij</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Jongeren</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero"></section>
+    <section class="demo-content"></section>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+    <!--
     <section class="header">
 
         <nav>
@@ -57,25 +92,25 @@
                 <img src="images/foto's page 1.png" alt="" class="image1"></div>
             <img src="images/zanger_micro_AV.png" alt="" class="zanger">
         </div>
-        </div>
-        <script>
-            var slideIndex = 0;
-            showSlides();
+        </div>-->
+    <script>
+        var slideIndex = 0;
+        showSlides();
 
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1;
-                }
-                slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 3500); // Change image every 2 seconds
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-        </script>
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3500); // Change image every 2 seconds
+        }
+    </script>
 
     </section>
     <div class="over-circuit">
@@ -131,7 +166,7 @@
         </div>
     </section>
     <!-----assist----->
-   
+
 
 
     <script src="index.js"></script>
