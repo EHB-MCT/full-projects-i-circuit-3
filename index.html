@@ -6,7 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIRCUIT n22</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 4000px;
+            min-width: 1500px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 6s ease;
+        }
+
+
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1s;
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .7
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .7
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -25,11 +115,59 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
-            <img src="images/MicrosoftTeams-image.png" alt="">
-            <h3>Voor Dromers, Groeiers en Kunstenaars.</h3>
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <img src="images/header.jpeg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="images/man op fiets 2.jpeg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="images/tattoo.jpeg" style=" width:100%">
+                <div class="text">Caption Three</div>
+            </div>
 
         </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+
     </section>
     <section class="content">
         <h1 id="projecten">Projecten</h1>
@@ -39,8 +177,8 @@
                 <a href="#">
                     <div class="text-layer">
                         <p>Aan circuservaring geen gebrek. Bij CIRCUIT kon Emiliano daar voor de eerste keer een tweede
-                            kunstzinnige laag aan toevoegen. Zijn boodschap: ‘de armoede van de armen maakt de rijken
-                            rijker’. Voor deze speciale performance leerde hij om in zijn eentje een show neer te
+                            kunstzinnige laag aan toevoegen. Zijn boodschap:'de armoede van de armen maakt de rijken
+                            rijker'. Voor deze speciale performance leerde hij om in zijn eentje een show neer te
                             zetten. “Ik heb hier ontdekt hoe goed het is om een coach te hebben die je performance vanaf
                             een afstand bekijkt”, zegt Emiliano.</p>
                     </div>
@@ -50,8 +188,49 @@
         <div id="over-circuit">
             <h1>Wat doen we?</h1>
 
-            <h1>Waar en wanneer kan je terecht?</h1>
-
+        </div>
+        <div class="block">
+            <div class="block-img"> <img src="images/man op fiets 2.jpeg"></div>
+            <div class="block-text">
+                <p>
+                    Léa mag met haar schemer tent de spits afbijten. Langzaam komen de toeschouwers binnen. “Ik
+                    wilde het publiek echt onderdompelen in mijn optreden,” zegt Léa.Met behulp van fluisteringen,
+                    lichtflitsen en de pikzwarte zaal zijn de aanwezigen volledig afhankelijk van hun zintuigen.
+                    “Tegenwoordig gebruik je je zintuigen eigenlijk vrij weinig omdat je ze niet meer nodig hebt om
+                    te overleven. Daardoor raken de mensen het contact met zichzelf kwijt.” Léa's opzet is zeker
+                    geslaagd: als toeschouwer kun je niet voorspellen wat er precies zal gebeuren. Alle dierlijke
+                    instincten die de mens bezit, staan op scherp. We leven.<br>
+                    Emiliano mag de avond afsluiten met een combinatie van theater en circus. In een kasteel van
+                    kartonnen dozen maakt hij kennis met het publiek.
+                    Aan circuservaring geen gebrek.
+                </p>
+            </div>
+        </div>
+        <h1>Waar en wanneer kan je terecht?</h1>
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 600px;
+                        width: 1000px;
+                    }
+                </style><a href="https://www.embedgooglemap.net"></a>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 600px;
+                        width: 1000px;
+                    }
+                </style>
+            </div>
+        </div>
+        </div>
+        </div>
     </section>
     <!-----assist----->
     <footer class="footer">
