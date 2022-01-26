@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-delay: -2s;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .7
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.carousel {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.section1 {
+    background-color: #002626;
+    min-height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: -700px;
+}
+
+
+.section2 {
+    background-color: #0E4749;
+    min-height: 500px;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    margin-bottom: -250px;
+}
+
+.section3 {
+    background-color: #002626;
+    min-height: 500px;
+}
+
+.text-normal {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.heading-2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.heading-3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.image-wrapper {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+.text-horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-left,
+.text-right {
+    width: 40%;
+}
+
+/*.text-left img {
+    border: 0.5px solid white;
+}*/
+
+.text-top {
+    width: 40%;
+    margin-bottom: 2em;
+}
+
+.kaas {
+    display: flex;
+}
+
+.kaas img {
+    width: 100%;
+    margin-top: 12em;
+    position: absolute;
+    z-index: 2;
+
+}
