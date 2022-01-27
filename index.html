@@ -134,10 +134,36 @@
                         adipisci aspernatur culpa.</p>
                 </div>
             </div>
-
+            <div class="wrapper"></div>
             <div class="section3-image">
-                <img class="image3" src="images/map.png" alt="">
+                <!-- <img class="image3" src="images/map.png" alt=""> -->
+                <h1>Waar en wanneer kan je terecht?</h1>
+
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 600px;
+                                width: 1000px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net"></a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 600px;
+                                width: 1000px;
+                            }
+                        </style>
+                    </div>
+                </div>
             </div>
+
+        </div>
 
         </div>
     </section>
@@ -196,7 +222,35 @@
 
     </section>
     <section class="section6">
+        <!--Commentbox-->
+    <div class="container" id="Commentbox">
 
+
+        <h2> Inschrijvinsgformulier</form></h2>
+
+        <form id="form1" name="form1" method="post" action="mailto:milan.langhendries@student.ehb.be"
+            enctype="text/plain">
+
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment" required></textarea>
+            </div>
+            <br>
+            <input type="submit" name="submit" id="submit" value="Send">
+
+        </form>
+    </div>
+    <!--End Commentbox-->
     </section>
     <section class="section7">
 
@@ -207,29 +261,11 @@
 
 
 
-    <!-- <h1>Waar en wanneer kan je terecht?</h1>
-        <div class="mapouter">
-        <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <style>
-                .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 600px;
-                    width: 1000px;
-                }
-            </style><a href="https://www.embedgooglemap.net"></a>
-            <style>
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 600px;
-                    width: 1000px;
-                }
-            </style>
-        </div>
-    </div>-->
+
+
+
+
+
 
 
     <!---assist----->
