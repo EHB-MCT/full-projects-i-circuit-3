@@ -10,21 +10,46 @@
 </head>
 
 <body>
-    <section class="header">
-        <nav>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-window-close" onclick="showMenu()"></i>
-                <ul>
-                    <li><a href="#over-circuit">OVER CIRCUIT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#projecten">PROJECTEN</a></li>
-                    <li><a href="#">GALLERIJ</a></li>
-                    <li><a href="#">JONGEREN</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+    <!-- <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="showMenu()"></i>
+            <ul>
+                <li><a href="#over-circuit">OVER CIRCUIT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#projecten">PROJECTEN</a></li>
+                <li><a href="#">GALLERIJ</a></li>
+                <li><a href="#jongeren">JONGEREN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>-->
 
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <i class="fa fa-window-close" onclick="showMenu()">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#over-circuit" class="nav-link">Over Circuit</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Projecten</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Gallerij</a>
+                        </li>
+                        <li>
+                            <a href="#jongeren" class="nav-link">Jongeren</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+        </i><i class="fa fa-bars" onclick="showMenu()"></i>
+    </header>
+    <section class="hero">
         <div class="carousel">
             <div class="slideshow-container">
                 <div class="kaas"><img src="images/png/logo_lijn_w.png" alt=""></div>
@@ -34,104 +59,155 @@
                     <img src="images/header.jpeg" style="width:100%">
 
                 </div>
+                <div class="mySlides fade">
+                    <!--<div class="kaas"><img src="images/Logo_groen.png" alt=""></div>-->
+
+                    <img src="images/Zanger_kleur.jpg" style="width:100%">
+                </div>
 
                 <div class="mySlides fade">
                     <img src="images/man op fiets 2.jpeg" style="width:100%">
                 </div>
 
-                <div class="mySlides fade">
-                    <!--<div class="kaas"><img src="images/Logo_groen.png" alt=""></div>-->
 
-                    <img src="images/zanger micro AV.png" style="width:100%">
-                </div>
 
                 <!-- Next and previous buttons -->
 
             </div>
         </div>
+    </section>
 
-        <section class="section1">
-            <div class="wrapper">
-                <!--<h2 class="heading-2">Over Circuit</h2>-->
-                <h3 class="heading-3">Wie is CIRCUIT?</h3>
-                <div class="image-wrapper"><img class="image" src="images/fotos-page-1.png" alt=""></div>
-            </div>
-        </section>
-        <section class="section2">
-            <div class="wrapper">
-                <div class="text-top">
-                    <p class="text-normal">CIRCUIT biedt jongeren kansen om hun eigen artistieke traject verder te
-                        verdiepen. Een
-                        kunstenaar/coach ondersteunt, inspireert, en daagt hen uit om tot een publiek eindresultaat te
-                        komen. <br> <br>Een voorstelling, festival, expo, of iets compleet out-of-the-box.<br> Elk
-                        traject
-                        vertrekt
-                        vanuit hun eigen idee en drive. Ze werken aan hun individuele project, afgewisseld met
-                        groepsmomenten waarbij ze uitwisselen met andere jongeren. </p>
-                </div>
-                <div class="text-horizontal">
-                    <div class="text-left">
-                        <img src="images/man op fiets vierkant.png" alt="">
-                    </div>
-                    <div class="text-right">
-                        <p class="text-normal">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae at, officia
-                            beatae
-                            quas quis, voluptates corporis facilis nihil voluptatum ipsa aut voluptate, dicta quaerat
-                            nemo a
-                            adipisci aspernatur culpa.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="section3">
-            <div class="wrapper">
-                <div class="section3-h3">
-                    <h3 class="heading-3">Waar kan je bij ons terecht?</h3>
-                </div>
-                <div class="section3-horizontal">
-                    <div class="section3-horizontal-left">
-                        <p class="text-normal">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae at, officia
-                            beatae
-                            quas quis, voluptates corporis facilis nihil voluptatum ipsa aut voluptate, dicta quaerat
-                            nemo a
-                            adipisci aspernatur culpa.</p><br>
-                    </div>
-                    <div class="section3-horizontal-right">
-                        <p class="text-normal">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae at, officia
-                            beatae
-                            quas quis, voluptates corporis facilis nihil voluptatum ipsa aut voluptate, dicta quaerat
-                            nemo a
-                            adipisci aspernatur culpa.</p>
-                    </div>
-                </div>
 
-                <div class="section3-image">
-                    <img class="image3" src="images/map.png" alt="">
-                </div>
+    <section class="section1">
+        <div class="wrapper">
+            <!--<h2 class="heading-2">Over Circuit</h2>-->
+            <h3 class="heading-3" id="over-circuit">Wat is CIRCUIT?</h3>
+            <div class="image-wrapper">
+                <img class="image" src="images/fotos-page-1.png" alt="">
             </div>
-        </section>
-        <section class="section4">
-            <div class="wrapper">
-                <div class="text-top">
+        </div>
+    </section>
+    <section class="section2">
+        <div class="wrapper">
+            <div class="text-top">
+                <p class="text-normal">CIRCUIT biedt jongeren kansen om hun eigen artistieke traject verder te
+                    verdiepen. Een
+                    kunstenaar/coach ondersteunt, inspireert, en daagt hen uit om tot een publiek eindresultaat te
+                    komen. <br> <br>Een voorstelling, festival, expo, of iets compleet out-of-the-box.<br> Elk
+                    traject
+                    vertrekt
+                    vanuit hun eigen idee en drive. Ze werken aan hun individuele project, afgewisseld met
+                    groepsmomenten waarbij ze uitwisselen met andere jongeren. </p>
+            </div>
+            <div class="text-horizontal">
+                <div class="text-left">
+                    <img src="images/man op fiets vierkant.png" alt="">
+                </div>
+                <div class="text-right">
                     <p class="text-normal">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum mollitia distinctio,
-                        natus voluptatem similique error facere asperiores quia suscipit veniam veritatis, fugiat nam ut
-                        eaque? Esse corporis deleniti in.
+                        Een kunstenaar geeft artistieke en inhoudelijke input, bezorgt contacten in de sector en
+                        inspireert. Het gemeenschapscentrum geeft input rond planning, communicatie en techniek.
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="wrapper">
+            <div class="section3-h3">
+                <h3 class="heading-3">Waar kan je bij ons terecht?</h3>
+            </div>
+            <div class="section3-horizontal">
+                <div class="section3-horizontal-left">
+                    <p class="text-normal">
+                        Een persoonlijk traject starten kan op verschillende locaties, De Kroon in
+                        Sint-Agatha-Berchem, de VaartKapoen in Molenbeek en de Maalbeek in Etterbeek.</p><br>
+                </div>
+                <div class="section3-horizontal-right">
+                    <p class="text-normal">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae at, officia
+                        beatae
+                        quas quis, voluptates corporis facilis nihil voluptatum ipsa aut voluptate, dicta quaerat
+                        nemo a
+                        adipisci aspernatur culpa.</p>
+                </div>
+            </div>
+
+            <div class="section3-image">
+                <img class="image3" src="images/map.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <section class="section4">
+        <div class="section4-image">
+            <img class="image4" src="images/illustratie_poppetje.png" alt="">
+        </div>
+        <div class="wrapper">
+            <div class="section4-horizontal">
+                <div class="section3-horizontal-left">
+                    <p class="text-normal-b">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae at, officia
+                        beatae
+                        quas quis, voluptates corporis facilis nihil voluptatum ipsa aut voluptate, dicta quaerat
+                        nemo a
+                        adipisci aspernatur culpa.</p><br>
+                </div>
+                <div class="section4-horizontal-right">
+                    <p class="text-normal-b">
+                        Ben je zelf performer, choreograaf, theatermaker, muzikant, urban artist, of tout court een
+                        artiest tussen 16 en 26 jaar? Werk je individueel, als collectief, in duo of in
+                        groep?<br><br>
+                        Dan
+                        kom je in aanmerking voor de volgende oproep voor CIRCUIT. Die volgt in het najaar van 2022.
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section class="section5">
+        <div class="wrapper5">
+            <div class="section5-top">
+                <div class="section5-top-text">
+                    <h3 class="heading-3">naam1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque sequi sint quaerat,
+                        dignissimos assumenda provident libero porro quos iusto ipsa incidunt magni fugiat cupiditate
+                        aliquam? Sunt commodi suscipit facere?</p>
+                </div>
+                <div class="section5-top-image">
+                    <img src="images/man op fiets vierkant.png" alt="">
+                </div>
+            </div>
+            <div class="section5-middle">
+                <img src="images/zanger micro AV.png" alt="">
+            </div>
+            <div class="section5-bottom">
+                <h3 class="heading-3">Project1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nesciunt, vel modi id consectetur
+                    repudiandae exercitationem dignissimos pariatur dolor iste cum cumque error non reiciendis magnam
+                    eveniet saepe autem laboriosam?</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="section6">
+
+    </section>
+    <section class="section7">
+
+    </section>
 
 
 
 
 
 
-        <!-- <h1>Waar en wanneer kan je terecht?</h1>
+    <!-- <h1>Waar en wanneer kan je terecht?</h1>
         <div class="mapouter">
         <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
                 src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -156,11 +232,11 @@
     </div>-->
 
 
-        <!---assist----->
-        <footer class="footer">
-            <p>&copy; CIRCUIT 2022</p>
-        </footer>
-        <script src="index.js"></script>
+    <!---assist----->
+    <footer class="footer">
+        <p>&copy; CIRCUIT 2022</p>
+    </footer>
+    <script src="index.js"></script>
 
 
 

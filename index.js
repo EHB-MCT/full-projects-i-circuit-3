@@ -14,3 +14,18 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+
+
+window.addEventListener('scroll', function () {
+    let header = document.querySelector('header');
+    // let windowPosition = window.scrollY > 0;
+
+
+    const heropos = document.querySelector('.hero').getBoundingClientRect().y;
+    const heroHeight = document.querySelector('.hero').getBoundingClientRect().height;
+
+    const offset = heropos + heroHeight;
+    const overScrolled = window.scrollY > offset;
+    header.classList.toggle('scrolling-active', overScrolled);
+
+})
