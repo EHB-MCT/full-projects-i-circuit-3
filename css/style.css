@@ -12,8 +12,7 @@
 
 h1,
 h3,
-nav,
-p {
+nav {
     font-family: hind siliguri;
 }
 
@@ -66,14 +65,9 @@ nav {
 }
 
 
-p {
-    font-family: outfit;
-}
 
 
-* div p {
-    font-weight: bold;
-}
+
 
 /***************** 
 HEADER

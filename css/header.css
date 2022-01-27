@@ -78,29 +78,67 @@
     background-color: #002626;
     min-height: 500px;
     padding-top: 2em;
+    padding-bottom: 150px;
 }
+
 
 .section5-top {
     display: flex;
+    justify-content: space-between;
 }
+
+.section5-top-image img {
+    width: 80%;
+}
+
+.image_middle {
+    margin-top: -50px;
+    width: 120%;
+    text-align: ;
+}
+
+
 
 .section5-middle {
     text-align: center;
 }
 
+.section5-bottom {
+    max-width: 1000px;
+}
+
+.section6 {
+    background-color: red;
+}
+
+.section6-top {
+    display: flex;
+}
+
+.section6-bottom {
+    display: block;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    font-family: hind siliguri;
+}
 
 
 .text-normal {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     /*background-color: red;*/
     max-width: 20em;
+    font-weight: lighter;
 }
 
 .text-normal-b {
     color: white;
-
-    font-size: 1rem;
+    font-size: 1.5rem;
     /*background-color: red;*/
     max-width: 15em;
     font-weight: 100;
