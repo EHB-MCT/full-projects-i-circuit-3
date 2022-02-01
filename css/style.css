@@ -1,5 +1,6 @@
 @import url("navigation.css");
 @import url("header.css");
+@import url("header_mobile.css");
 
 .nav-links {
     position: fixed;
@@ -17,9 +18,12 @@ nav {
 }
 
 .footer {
-    text-align: center;
     background-color: #002626;
     color: white;
+}
+
+.text-footer {
+    text-align: center;
 }
 
 
@@ -88,7 +92,7 @@ nav {
 
 nav img {
     width: 300px;
-    margin-left: 15x;
+    margin-left: 15px;
 }
 
 .nav-links {
@@ -151,7 +155,7 @@ header {
 .container {
     width: 100%;
     max-width: 120rem;
-    margin-left: 350px;
+    margin-left: 40em;
     padding: 0 1.5rem;
 
 }
@@ -163,9 +167,11 @@ header {
     align-items: center;
     justify-content: space-between;
     transition: height .75s ease;
-    margin-left: 250px;
+    margin-left: 10px;
     font-size: 1em;
 }
+
+
 
 .nav a {
     text-decoration: none;
@@ -178,10 +184,7 @@ header {
 
 }
 
-.nav .logo {
-    font-size: 3.5rem;
-    font-weight: bold;
-}
+
 
 .nav-list {
     list-style: none;
@@ -201,7 +204,7 @@ header {
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #95C623;
+    background-color: white;
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -221,15 +224,27 @@ header {
 .scrolling-active {
     background-color: #95c623;
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+    height: 3;
 
 }
 
 .scrolling-active .nav {
-    height: 4rem;
+    height: 5rem;
+    margin-left: -40em;
+
 }
 
 .scrolling-active .nav a {
     color: white;
+}
+
+#logo_nav {
+    display: none;
+}
+
+.scrolling-active #logo_nav {
+    width: 10%;
+    display: flex
 }
 
 

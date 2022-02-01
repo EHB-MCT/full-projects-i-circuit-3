@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    font-family: hind siliguri;
+}
+
+strong {
+    color: #95C623;
 }
 
 /* Slideshow container */
@@ -44,9 +49,17 @@
 .section1 {
     background-color: #002626;
     min-height: 500px;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     margin-bottom: -700px;
+}
+
+.text-section1 {
+    max-width: 19em;
+}
+
+.image-wrapper {
+    margin-top: -250px;
 }
 
 
@@ -79,22 +92,32 @@
     min-height: 500px;
     padding-top: 2em;
     padding-bottom: 150px;
+    margin-top: -200px;
 }
-
 
 .section5-top {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
-.section5-top-image img {
-    width: 80%;
+.section5-top-text {
+    margin-right: em;
 }
+
+.foto_jongeren {
+    width: 70%;
+}
+
+.section5-top-image,
+.section6-top-image {
+    text-align: center;
+}
+
 
 .image_middle {
     margin-top: -50px;
-    width: 120%;
-    text-align: ;
+    width: 100%;
 }
 
 
@@ -105,10 +128,16 @@
 
 .section5-bottom {
     max-width: 1000px;
+    margin-top: -50px;
 }
 
 .section6 {
-    background-color: red;
+    background-color: #0E4749;
+    min-height: 500px;
+    padding-top: 2em;
+    margin-top: -100px;
+    padding-bottom: 7em;
+
 }
 
 .section6-top {
@@ -117,7 +146,15 @@
 
 .section6-bottom {
     display: block;
-    text-align: center;
+    text-align: left;
+}
+
+.section6-bottom-text {
+    margin-top: -80px;
+}
+
+.section7 {
+    background-color: red;
 }
 
 p {
@@ -125,6 +162,7 @@ p {
     font-weight: lighter;
     font-size: 1.5rem;
     font-family: hind siliguri;
+    text-align: left;
 }
 
 
@@ -165,6 +203,7 @@ p {
 .heading-2 {
     color: white;
     font-size: 3rem;
+    font-family: hind siliguri;
 }
 
 .heading-3 {
@@ -174,7 +213,7 @@ p {
 
 #jongeren.heading-3 {
     width: 100%;
-    text-align: center;
+    text-align: left;
     position: absolute;
 }
 
@@ -209,12 +248,19 @@ p {
     padding-bottom: 7em;
     width: 100%;
     text-align: right;
+    color: #95C623;
+    font-size: 2rem;
+}
+
+.heading-locaties {
+    color: #95C623;
+    font-size: 2rem;
 }
 
 .section3-horizontal {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 7em;
 }
 
 .section3-image {
@@ -238,14 +284,19 @@ p {
 .section3-horizontal-left,
 .section3-horizontal-right {
     width: 40%;
+
 }
 
 
 
 
-.text-left,
+.text-left {
+    width: 40%;
+}
+
 .text-right {
     width: 40%;
+    padding-bottom: 7em;
 }
 
 /*.text-left img {
@@ -260,12 +311,13 @@ p {
 
 .kaas {
     display: flex;
+    width: 100%;
 }
 
 .kaas img {
-    width: 100%;
-    margin-top: 12em;
+    width: 80%;
+    margin-top: 14em;
     position: absolute;
     z-index: 2;
-
+    padding-left: 20em;
 }
