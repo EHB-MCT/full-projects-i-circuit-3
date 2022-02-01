@@ -1,6 +1,6 @@
 @import url("navigation.css");
 @import url("header.css");
-@import url("header_mobile.css");
+/*@import url("header_mobile.css");*/
 
 .nav-links {
     position: fixed;
@@ -280,3 +280,28 @@ header {
 
 
 /* Hero end*/
+/*Commentbox*/
+
+.form-group {
+    width: 600px;
+    margin: 0 auto;
+    color: #707070;
+}
+
+#submit {
+    position: relative;
+    left: 760px;
+    background-color: #ffffff;
+    color: #707070;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+#submit:hover {
+    background-color: #707070;
+    color: #FFFFFF;
+    padding: 7px;
+}
+
+/*End Commentbox*/

@@ -141,10 +141,36 @@
                     </p>
                 </div>
             </div>
-
+            <div class="wrapper"></div>
             <div class="section3-image">
-                <img class="image3" src=" images/map.png" alt="">
+                <!-- <img class="image3" src="images/map.png" alt=""> -->
+                <h1>Waar en wanneer kan je terecht?</h1>
+
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 600px;
+                                width: 1000px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net"></a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 600px;
+                                width: 1000px;
+                            }
+                        </style>
+                    </div>
+                </div>
             </div>
+
+        </div>
 
         </div>
     </section>
@@ -243,62 +269,44 @@
 
             </div>
         </div>
-    </section>
-    <!-- <section class="section7">
-        <div class="wrapper">
-            <div class="section7-top">
-                <div class="section7-top-left">
-                    <p class="text-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci ab id
-                        ratione pariatur, illo fugit ipsam aut qui asperiores, debitis aliquid mollitia atque. Accusamus
-                        nostrum adipisci harum sint distinctio.</p>
-                    <img src="" alt="">
-                </div>
 
-                <div class="section7-top-right">
-                    <div class="section6-right-image">
-                        <img class="image_middle" src="images/afbeelding2_sectie6.png" alt="">
-                    </div>
-                    <div class="section7-right-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur molestias incidunt enim,
-                        sunt accusamus sit ut placeat autem nihil at, praesentium, nisi voluptas perferendis esse ipsum
-                        alias architecto impedit.
-                    </div>
+        <!--Commentbox-->
+        <div class="container" id="Commentbox">
+
+
+            <h2> Inschrijvinsgformulier</form>
+            </h2>
+
+            <form id="form1" name="form1" method="post" action="mailto:milan.langhendries@student.ehb.be"
+                enctype="text/plain">
+
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr" required>
                 </div>
-                <div class="section7-bottom">
-                    <div class="section7-bottom-left">
-                        <h3 class="heading-3">Naam3</h3>
-                        <p class="text-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                            consectetur quaerat fuga totam aspernatur, animi cumque illo iste similique officia
-                            perferendis magni nam sint provident. Reprehenderit iusto rerum quam architecto?</p>
-                    </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" class="form-control" id="email" required>
                 </div>
-            </div>
+                <br>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment" required></textarea>
+                </div>
+                <br>
+                <input type="submit" name="submit" id="submit" value="Send">
+
+            </form>
         </div>
-    </section>-->
-    <!-- <h1>Waar en wanneer kan
-                            je terecht?</h1>
-                            <div class="mapouter">
-                                <div class="gmap_canvas"><iframe width="1000" height="600" id="gmap_canvas"
-                                        src="https://maps.google.com/maps?q=Hoornstraat%2097,%201040%20Etterbeek&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                    <style>
-                                        .mapouter {
-                                            position: relative;
-                                            text-align: right;
-                                            height: 600px;
-                                            width: 1000px;
-                                        }
-                                    </style><a href="https://www.embedgooglemap.net"></a>
-                                    <style>
-                                        .gmap_canvas {
-                                            overflow: hidden;
-                                            background: none !important;
-                                            height: 600px;
-                                            width: 1000px;
-                                        }
-                                    </style>
-                                </div>
-                            </div>-->
+        <!--End Commentbox-->
+    </section>
+
+
+
+
+
+
 
 
     <!---assist----->
