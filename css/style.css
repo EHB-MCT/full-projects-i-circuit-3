@@ -1,9 +1,7 @@
 @import url("navigation.css");
-@import url("header.css");
-/*@import url("header_mobile.css");*/
+@import url("header_mobile.css");
 
 .nav-links {
-    position: fixed;
     top: 0;
     width: 100%;
     background-color: hsl(0, 0%, 10%, 0.65);
@@ -13,17 +11,15 @@
 
 h1,
 h3,
-nav {
+nav,
+p {
     font-family: hind siliguri;
 }
 
 .footer {
+    text-align: center;
     background-color: #002626;
     color: white;
-}
-
-.text-footer {
-    text-align: center;
 }
 
 
@@ -51,7 +47,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #95C623;
+    background: #FFDD06;
     border-radius: 10px;
 
 }
@@ -62,246 +58,18 @@ body {
 
 }
 
-h1,
-h3,
-nav {
-    font-family: hind siliguri;
+
+.footer {
+    background-color: #002626;
+    color: black;
+    width: 100%;
 }
 
-
-
-
+.text-footer {
+    text-align: center;
+}
 
 
 /***************** 
 HEADER
 ******************/
-
-
-
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    font-family: hind siliguri;
-
-}
-
-
-
-nav img {
-    width: 300px;
-    margin-left: 15px;
-}
-
-.nav-links {
-    flex: 1;
-    text-align: center;
-    margin-top: none;
-}
-
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-
-}
-
-.nav-links ul li a {
-    /*navigatie woorden*/
-    color: #fff;
-    text-decoration: none;
-    font-size: 17.5px;
-}
-
-.nav-links ul li::after {
-    /*kleur onder de nav links*/
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #95C623;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
-    width: 100%;
-}
-
-/*navigatiebar css*/
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: background-color .5s ease;
-    z-index: 1000;
-}
-
-.container {
-    width: 100%;
-    max-width: 120rem;
-    margin-left: 40em;
-    padding: 0 1.5rem;
-
-}
-
-.nav {
-    width: 100%;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: height .75s ease;
-    margin-left: 10px;
-    font-size: 1em;
-}
-
-
-
-.nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    text-align: center;
-    font-family: hind siliguri;
-    font-style: normal;
-
-
-}
-
-
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    margin-right: auto;
-    margin-left: 4rem;
-
-}
-
-.nav-link {
-    margin: 0 2rem;
-    position: relative;
-
-}
-
-.nav-link::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .5s ease;
-
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-
-
-/*Apply styles after scroll*/
-.scrolling-active {
-    background-color: #95c623;
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
-    height: 3;
-
-}
-
-.scrolling-active .nav {
-    height: 5rem;
-    margin-left: -40em;
-
-}
-
-.scrolling-active .nav a {
-    color: white;
-}
-
-#logo_nav {
-    display: none;
-}
-
-.scrolling-active #logo_nav {
-    width: 10%;
-    display: flex
-}
-
-
-
-
-
-.scrolling-active .nav-link::after {
-    background-color: #0E4749;
-}
-
-/*Apply styles after scroll end*/
-
-
-/* Hero Demo Content*/
-.hero {
-    width: 100%;
-    height: 100vh;
-    background: url("../images/bg.jpeg") center no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero::after {
-    content: '';
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
-
-
-
-/* Hero end*/
-/*Commentbox*/
-
-.form-group {
-    width: 600px;
-    margin: 0 auto;
-    color: #707070;
-}
-
-#submit {
-    position: relative;
-    left: 760px;
-    background-color: #ffffff;
-    color: #707070;
-    border-radius: 5px;
-    padding: 3px;
-}
-
-
-#submit:hover {
-    background-color: #707070;
-    color: #FFFFFF;
-    padding: 7px;
-}
-
-/*End Commentbox*/
