@@ -1,3 +1,5 @@
+
+// https://www.w3schools.com/howto/howto_js_slideshow.asp
 var slideIndex = 0;
 showSlides();
 
@@ -15,7 +17,7 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
-
+// https://www.youtube.com/watch?v=vE4UuSzR5T0&list=TLPQMDMwMjIwMjJRAQUrC4EljQ&index=1
 window.addEventListener('scroll', function () {
     let header = document.querySelector('header');
     // let windowPosition = window.scrollY > 0;
@@ -29,7 +31,7 @@ window.addEventListener('scroll', function () {
     header.classList.toggle('scrolling-active', overScrolled);
 
 })
-
+// https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
 // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
 
@@ -115,6 +117,8 @@ function onClick(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
 }
+
+
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
