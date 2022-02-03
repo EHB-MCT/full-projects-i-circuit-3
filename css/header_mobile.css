@@ -248,19 +248,7 @@ img {
 
 
 
-.nav {
-    display: inline-block;
-    text-align: center;
-}
 
-
-.nav ul li a {
-    text-decoration: none;
-}
-
-.nav-links ul li {
-    display: flex;
-}
 
 .wrapper {
     max-width: 350px;
@@ -314,6 +302,53 @@ p {
 .kaas {
     display: none;
 }
+
+.video_titel {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+
+.container {
+    display: none;
+}
+
+.wrapper2 {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    margin-top: 2em;
+    padding: 2em;
+    color: black;
+}
+
+.buton button {
+    color: #FFDD06;
+    background-color: white;
+    border: none;
+    width: 20%;
+
+}
+
+.buton button:hover {
+    cursor: pointer;
+}
+
+.buton {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    padding-left: 9em;
+}
+
+.weergaven {
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
 
 @media(min-width:700px) {
     body {
@@ -401,10 +436,11 @@ p {
         top: 0;
         left: 0;
         transition: background-color .5s ease;
-        z-index: 1000;
+        z-index: 90;
     }
 
     .container {
+        display: flex;
         width: 100%;
         max-width: 120rem;
         margin-left: 40em;
@@ -633,43 +669,7 @@ p {
 
     /*Commentbox*/
 
-    .form-group {
-        width: 100%;
-        margin: 0 auto;
-        color: #95c623;
-        border: #95C623;
-        border-radius: 7px;
-        padding-top: 40px;
-        margin-left: 400px;
-    }
 
-
-
-    .form-control {
-
-        width: 100%;
-        border-radius: 6px;
-        border-color: #95C623;
-
-    }
-
-    .application {
-        width: 45%;
-        text-align: left;
-
-    }
-
-    #submit {
-        position: relative;
-        text-align: right;
-        background-color: #95C623;
-        color: #fff;
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 20px;
-        size: 100%;
-
-    }
 
     .kaas {
         display: flex;
@@ -698,7 +698,7 @@ p {
         width: 10%;
         display: flex;
         text-align: center;
-        margin-left: 19em;
+        margin-left: 14.5em;
     }
 
     .buton button:hover {
@@ -734,5 +734,46 @@ p {
         background-color: white;
         margin: 0;
         padding: 0;
+        color: black;
     }
+
+    .column img {
+        border-radius: 5px;
+    }
+
+    .wrapper2 {
+        display: inline-block;
+        text-align: center;
+        background-color: white;
+        margin-top: 2em;
+        padding: 2em;
+        color: black;
+    }
+
+    video {
+        margin-left: 0.5em;
+        widows: 30%;
+        height: 30%;
+    }
+
+    .left {
+        width: 115%;
+    }
+
+    .left img {
+        width: 100%;
+        margin-right: -2.5em;
+        margin-top: -2.3em;
+    }
+
+    .video_titel {
+        color: black;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .topnav {
+        display: none;
+    }
+
 }

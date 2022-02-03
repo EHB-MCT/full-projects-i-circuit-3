@@ -6,38 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIRCUIT n22</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-
+    <link rel="icon" type="image/x-icon" href="images/icon_neg.ico">
 </head>
 
-<body>
+<body style="cursor: url(images/icon.cur),auto;">
 
     <header>
+        <!-- Top Navigation Menu -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav">
+            <a href="#home" class="active"><img src="images/LOGO_ROZE.png" alt=""></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#over-circuit" class="nav-link">Over Circuit</a>
+                <a href="#kaart" class="nav-link">Locaties</a>
+                <a href="#jongeren" class="nav-link">Artiesten & Projecten</a>
+                <a href="#commentbox" class="nav-link">Contact</a>
+                <a href="#galerij" class="nav-link">Galerij</a>
+
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icoon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <div class="container">
             <nav class="nav">
                 <img id="logo_nav" src="images/LOGO_ROZE.png" alt="">
-                <i class="fa fa-window-close" onclick="showMenu()">
-                    <ul class="nav-list">
+                <ul class="nav-list">
 
-                        <li>
-                            <a href="#over-circuit" class="nav-link">Over Circuit</a>
-                        </li>
-                        <li>
-                            <a href="#kaart" class="nav-link">Locaties</a>
-                        </li>
-                        <li>
-                            <a href="#jongeren" class="nav-link">Artiesten & Projecten</a>
-                        </li>
-                        <li>
-                            <a href="#commentbox" class="nav-link">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#galerij" class="nav-link">Galerij</a>
-                        </li>
+                    <li>
+                        <a href="#over-circuit" class="nav-link">Over Circuit</a>
+                    </li>
+                    <li>
+                        <a href="#kaart" class="nav-link">Locaties</a>
+                    </li>
+                    <li>
+                        <a href="#jongeren" class="nav-link">Artiesten & Projecten</a>
+                    </li>
+                    <li>
+                        <a href="#commentbox" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#galerij" class="nav-link">Galerij</a>
+                    </li>
 
-                    </ul>
+                </ul>
             </nav>
         </div>
-        </i><i class="fa fa-bars" onclick="showMenu()"></i>
     </header>
     <section class="hero">
         <div class="carousel">
@@ -101,6 +118,33 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div class="wrapper2">
+            <h2 class="video_titel">Bekijk hieronder enkele artiesten hun ervaring met CIRCUIT.</h2><video width="30%"
+                height="30%" controls>
+                <source src="images/Video's circuit/CIRCUIT - Daan LeBlanc - rapper.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="30%" height="30%" controls>
+                <source src="images/Video's circuit/CIRCUIT - Adnane Lamarti.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="30%" height="30%" controls>
+                <source src="images/Video's circuit/CIRCUIT - Delphine, Luna .mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="30%" height="30%" controls>
+                <source src="images/Video's circuit/CIRCUIT - DJ Joycie Ruba.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="30%" height="30%" controls>
+                <source src="images/Video's circuit/CIRCUIT - Lente en Linde - theatermakers.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="30%" height="30%" controls>
+                <source src="images/Video's circuit/CIRCUIT - Rachid van RONIN en THEGAP.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
 
@@ -259,18 +303,18 @@
     </section>
     <div class="Vcontainer">
         <div class="contact-box">
-            <div class="left"><img src="images/illustratie_blauw.png" alt=""></div>
+            <div class="left"><img src="images/Contactbox.png" alt=""></div>
             <div class="right">
                 <h2 class="header_contact">Contacteer ons</h2>
                 <input type="text" class="field" placeholder="Je Naam + Voornaam">
                 <input type="text" class="field" placeholder="Je e-mail adres">
                 <input type="text" class="field" placeholder="Je gsm nummer (optioneel)">
                 <textarea placeholder="Extra Commentaar" class="field"></textarea>
-                <button class="btn">Send</button>
+                <button class="btn" id="galerij">Send</button>
             </div>
         </div>
     </div>
-    <section class="section7" id="galerij">
+    <section class="section7">
         <h2 class="weergaven">Kies afbeelding weergave:</h2>
         <div class="buton">
             <button onclick="one()"><img src="images/knop1.png" alt=""></button>
@@ -278,50 +322,79 @@
             <button onclick="four()"><img src="images/knop3.png" alt=""> </button>
         </div>
 
-        <div class="row">
-            <div class="column">
-                <img src="images/Zanger_kleur.jpg">
-                <img src="images/vrouw omarmt andere vrouw 2.jpeg">
-                <img src="images/bg.jpeg">
-                <img src="images/foto rapper zwart wit .jpeg">
-                <img src="images/man op fiets 2.jpeg">
-                <img src="images/zangeres_blauw.jpeg">
-                <img src="images/Wetransfer/_DSC7234.jpg">
-                <img src="images/tattoo.jpeg" alt="">
+        <div class="container1">
+            <div class="row">
+                <div class="column">
+
+
+                    <img src="images/Zanger_kleur.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/vrouw omarmt andere vrouw 2.jpeg" onclick="onClick(this)"
+                        class="modal-hover-opacity">
+                    <img src="images/bg.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/foto rapper zwart wit .jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/man op fiets 2.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/zangeres_blauw.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/_DSC7234.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/tattoo.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                </div>
+
+                <div class="column">
+                    <img src="images/Wetransfer/_DSC7376.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/_DSC7023.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/_DSC7358.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/1.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/_DSC7047.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/_DSC7366.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/6.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/7.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/14.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                </div>
+                <div class="column">
+                    <img src="images/8.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/2.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/9.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/10.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/11.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/12.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+
+                </div>
+                <div class="column">
+                    <img src="images/15.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/16.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/17.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/18.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/19.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/Wetransfer/20.jpg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/21.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                    <img src="images/22.jpeg" onclick="onClick(this)" class="modal-hover-opacity">
+                </div>
+
+            </div>
+            <div id="modal01" class="modal" onclick="this.style.display='none'">
+                <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="modal-content">
+                    <img id="img01" style="max-width:100%">
+                </div>
             </div>
 
-            <div class="column">
-                <img src="images/Wetransfer/_DSC7376.jpg">
-                <img src="images/Wetransfer/_DSC7023.jpg">
-                <img src="images/Wetransfer/_DSC7358.jpg">
-                <img src="images/1.jpeg">
-                <img src="images/Wetransfer/_DSC7047.jpg">
-                <img src="images/Wetransfer/_DSC7366.jpg">
-                <img src="images/6.jpeg">
-                <img src="images/7.jpeg" alt="">
-                <img src="images/14.jpeg" alt="">
-            </div>
-            <div class="column">
-                <img src="images/8.jpeg">
-                <img src="images/2.jpeg">
-                <img src="images/9.jpeg">
-                <img src="images/10.jpeg">
-                <img src="images/11.jpeg">
-                <img src="images/12.jpeg">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
 
-            </div>
-            <div class="column">
-                <img src="images/15.jpeg">
-                <img src="images/16.jpeg">
-                <img src="images/Wetransfer/17.jpg">
-                <img src="images/Wetransfer/18.jpg">
-                <img src="images/Wetransfer/19.jpg">
-                <img src="images/Wetransfer/20.jpg">
-                <img src="images/21.jpeg">
-                <img src="images/22.jpeg" alt="">
+                <!-- The Close Button -->
+
+                <span class="close">&times;</span>
+
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
             </div>
 
         </div>
+
 
     </section>
 
