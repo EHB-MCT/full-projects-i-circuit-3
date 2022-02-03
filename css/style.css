@@ -20,10 +20,12 @@ p {
 .footer {
     text-align: center;
     background-color: transparent;
+
 }
 
 .footer img {
     width: 3%;
+    margin-right: 2em;
 }
 
 .text-footer {

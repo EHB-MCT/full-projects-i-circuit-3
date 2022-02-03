@@ -678,7 +678,7 @@ p {
 
     .kaas img {
         width: 80%;
-        margin-top: 14em;
+        margin-top: 10em;
         position: absolute;
         z-index: 2;
         padding-left: 20em;
@@ -774,6 +774,14 @@ p {
 
     .topnav {
         display: none;
+    }
+
+    .footer img {
+        width: 3%;
+    }
+
+    .footer a {
+        margin-right: 2em;
     }
 
 }
